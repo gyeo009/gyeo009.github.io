@@ -57,9 +57,9 @@ buildExpired = false
   # 설정: https://giscus.app/ko 에서 생성
   [params.giscus]
     repo = "gyeo009/gyeo009.github.io"
-    repoID = ""           # TODO: giscus.app에서 확인
-    category = "Comments"
-    categoryID = ""       # TODO: giscus.app에서 확인
+    repoID = "R_kgDONn05kw"
+    category = "General"
+    categoryID = "DIC_kwDONn05k84C1sE-"
     mapping = "pathname"
     reactionsEnabled = "1"
     emitMetadata = "0"
