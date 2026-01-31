@@ -1,6 +1,6 @@
 baseURL = 'https://gyeo009.github.io/'
 languageCode = 'ko'
-title = "Claude Kim's Blog"
+title = "Hyodae Kim's Blog"
 theme = 'PaperMod'
 
 # 기본 설정
@@ -17,9 +17,9 @@ buildExpired = false
 
 [params]
   env = "production"
-  title = "Claude Kim's Blog"
+  title = "Hyodae Kim's Blog"
   description = "개발 블로그"
-  author = "Claude Kim"
+  author = "Hyodae Kim"
 
   # 다크/라이트 모드
   defaultTheme = "auto"
