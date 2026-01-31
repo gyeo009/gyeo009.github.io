@@ -1,0 +1,49 @@
+/* 커스텀 폰트 (Pretendard - 한글 최적화) */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+:root {
+  --main-font: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --code-font: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+code, pre {
+  font-family: var(--code-font);
+}
+
+/* 다크모드 커스텀 색상 */
+.dark {
+  --primary: #7aa2f7;      /* 링크 색상 */
+  --secondary: #a9b1d6;    /* 보조 텍스트 */
+  --theme: #1a1b26;        /* 배경색 */
+  --entry: #24283b;        /* 카드 배경 */
+}
+
+/* 라이트모드 커스텀 색상 */
+:root {
+  --primary: #2563eb;
+  --secondary: #64748b;
+}
+
+/* 코드 블록 스타일 */
+.post-content pre {
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+/* 인용문 스타일 */
+blockquote {
+  border-left: 4px solid var(--primary);
+  padding-left: 1rem;
+  font-style: italic;
+}
+
+/* 목차 스타일 */
+.toc {
+  background: var(--entry);
+  border-radius: 8px;
+  padding: 1rem;
+}

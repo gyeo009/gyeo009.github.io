@@ -1,0 +1,100 @@
+baseURL = 'https://gyeo009.github.io/'
+languageCode = 'ko'
+title = "Claude Kim's Blog"
+theme = 'PaperMod'
+
+# 기본 설정
+[pagination]
+  pagerSize = 10
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[params]
+  env = "production"
+  title = "Claude Kim's Blog"
+  description = "개발 블로그"
+  author = "Claude Kim"
+
+  # 다크/라이트 모드
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = true
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = false
+
+  # 홈페이지 모드: profile, home-info
+  [params.homeInfoParams]
+    Title = "Hi there!"
+    Content = "Welcome to my blog"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/gyeo009"
+
+  # Google Analytics (GA4)
+  # TODO: 본인 Measurement ID로 교체
+  [params.analytics.google]
+    SiteVerificationTag = ""  # Google Search Console 인증 (선택)
+
+  # Giscus 댓글
+  # 설정: https://giscus.app/ko 에서 생성
+  [params.giscus]
+    repo = "gyeo009/gyeo009.github.io"
+    repoID = ""           # TODO: giscus.app에서 확인
+    category = "Comments"
+    categoryID = ""       # TODO: giscus.app에서 확인
+    mapping = "pathname"
+    reactionsEnabled = "1"
+    emitMetadata = "0"
+    inputPosition = "top"
+    theme = "preferred_color_scheme"
+    lang = "ko"
+
+# Google Analytics
+[services]
+  [services.googleAnalytics]
+    ID = "G-XXXXXXXXXX"   # TODO: 본인 GA4 ID로 교체
+
+# 검색 기능
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# 메뉴
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives/"
+    weight = 30
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 40
