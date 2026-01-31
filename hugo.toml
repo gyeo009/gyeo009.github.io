@@ -58,12 +58,12 @@ buildExpired = false
   [params.giscus]
     repo = "gyeo009/gyeo009.github.io"
     repoID = "R_kgDONn05kw"
-    category = "General"
-    categoryID = "DIC_kwDONn05k84C1sE-"
+    category = "Announcements"
+    categoryID = "DIC_kwDONn05k84C1sE9"
     mapping = "pathname"
     reactionsEnabled = "1"
     emitMetadata = "0"
-    inputPosition = "top"
+    inputPosition = "bottom"
     theme = "preferred_color_scheme"
     lang = "ko"
 
