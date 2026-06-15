@@ -29,6 +29,12 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+.site-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -78,6 +84,7 @@ pre {
 
 .page-shell {
   padding: 4.8rem 0 3rem;
+  flex: 1;
 }
 
 .home-intro,
@@ -262,9 +269,9 @@ pre {
 
 .site-footer {
   width: min(calc(100% - 3rem), var(--essay-width));
-  margin: 2rem auto;
-  padding-top: 1.2rem;
-  border-top: 0;
+  margin: 3rem auto 1.5rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--line);
 }
 
 .footer-inner {
@@ -274,7 +281,7 @@ pre {
 }
 
 .footer-title {
-  margin: 0;
+  margin: 0 0 0.35rem;
   font-weight: 400;
 }
 
@@ -287,7 +294,7 @@ pre {
 
 .footer-license {
   width: min(calc(100% - 3rem), var(--essay-width));
-  margin: 0.6rem auto 0;
+  margin: 0.9rem auto 0;
   color: var(--muted);
   font-size: 0.82rem;
 }
