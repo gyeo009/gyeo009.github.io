@@ -1,0 +1,65 @@
+baseURL = "https://gyeo009.github.io/"
+languageCode = "ko-KR"
+title = "Mind over matter"
+enableRobotsTXT = true
+summaryLength = 28
+
+[pagination]
+  pagerSize = 8
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[permalinks]
+  posts = "/posts/:slugorcontentbasename/"
+
+[taxonomies]
+  tag = "tags"
+  topic = "topics"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+    lineNos = false
+    style = "github-dark"
+
+[params]
+  author = "Hyodae Kim"
+  description = "실무에서 얻은 판단과 감각을 기록하는 백엔드 개발자 블로그"
+  introTitle = "실무에서 얻은 생각을 정리하는 곳"
+  introBody = "DB 접근제어 프록시, Kotlin 기반 MCP 서버, LLM chat middleware를 만들고 운영하며 배운 점을 정리합니다. 내부 정보는 덜어내고, 남는 판단과 원칙을 남깁니다."
+  roleLine = "Backend Engineer working on security, AI systems, and production-minded software."
+  email = "hello@gyeo009.dev"
+  github = "https://github.com/gyeo009"
+  accent = "#2f6fed"
+  contentLicense = "Unless otherwise noted, writing on this site is All Rights Reserved."
+  topics = ["Backend", "AI Systems", "Database", "Architecture", "Operations"]
+
+[menu]
+  [[menu.main]]
+    identifier = "popular"
+    name = "Popular"
+    url = "/posts/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 40
+
+  [[menu.main]]
+    identifier = "rss"
+    name = "RSS"
+    url = "/index.xml"
+    weight = 30

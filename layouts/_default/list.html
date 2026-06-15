@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <section class="page-intro">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}
+      <p class="intro-body">{{ . }}</p>
+    {{ end }}
+  </section>
+
+  {{ if eq .Section "posts" }}
+    <div class="post-list">
+      {{ range .Paginator.Pages }}
+        {{ partial "post-card.html" . }}
+      {{ end }}
+    </div>
+  {{ else }}
+    <article class="essay-content">
+      {{ .Content }}
+    </article>
+  {{ end }}
+
+  {{ template "_internal/pagination.html" . }}
+{{ end }}

@@ -1,0 +1,17 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#F5F7FB"/>
+  <circle cx="149" cy="131" r="180" fill="#DCE7FF"/>
+  <circle cx="1066" cy="96" r="150" fill="#D7F4EB"/>
+  <rect x="106" y="120" width="988" height="390" rx="36" fill="white"/>
+  <rect x="106" y="120" width="988" height="390" rx="36" stroke="#D9E3F5"/>
+  <rect x="152" y="168" width="176" height="16" rx="8" fill="#2F6FED"/>
+  <rect x="152" y="214" width="660" height="62" rx="18" fill="#152033"/>
+  <rect x="152" y="300" width="530" height="24" rx="12" fill="#6D7A93"/>
+  <rect x="152" y="338" width="610" height="24" rx="12" fill="#93A0B8"/>
+  <rect x="152" y="406" width="186" height="44" rx="22" fill="#E8F0FF"/>
+  <path d="M936 400C936 366.863 962.863 340 996 340H1072C1105.14 340 1132 366.863 1132 400V460H936V400Z" fill="#152033"/>
+  <rect x="954" y="358" width="160" height="16" rx="8" fill="#2F6FED"/>
+  <rect x="954" y="386" width="122" height="12" rx="6" fill="#93A0B8"/>
+  <text x="152" y="92" fill="#152033" font-family="Arial, sans-serif" font-size="38" font-weight="700">Hyodae Kim</text>
+  <text x="152" y="470" fill="#5E6B85" font-family="Arial, sans-serif" font-size="28">Thoughts on backend systems, AI infrastructure, and work.</text>
+</svg>

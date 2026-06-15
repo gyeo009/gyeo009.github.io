@@ -1,0 +1,31 @@
+{{ define "main" }}
+  <article class="essay-single">
+    <header class="post-header">
+      <h1>{{ .Title }}</h1>
+      <div class="post-meta">
+        <span>{{ .Date.Format "January 2, 2006" }}</span>
+        {{ with .Params.topics }}
+          <span>{{ delimit . " / " }}</span>
+        {{ end }}
+      </div>
+      {{ with .Summary }}
+        <p class="post-summary">{{ . }}</p>
+      {{ end }}
+    </header>
+
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+
+    {{ with .Params.tags }}
+      <footer class="post-footer">
+        <p class="footer-label">Tags</p>
+        <ul class="tag-list">
+          {{ range . }}
+            <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+      </footer>
+    {{ end }}
+  </article>
+{{ end }}
