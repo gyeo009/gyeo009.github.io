@@ -1,7 +1,7 @@
 +++
 title = "What is a VPN"
 date = 2026-08-20T15:30:00+09:00
-draft = true
+draft = false
 summary = "VPN이란?"
 tags = ["network", "vpn", "wireguard"]
 topics = ["Writing", "vpn", "network", "wireguard"]
